@@ -105,7 +105,7 @@ function buildCharts(sample) {
   });
 }
 
-// // Deliverable Bubble charts
+// // Deliverable 2 Bubble charts
 
 //     // 1. Create the trace for the bubble chart.
     var bubbleData = [ 
@@ -127,7 +127,7 @@ function buildCharts(sample) {
       title: 'Bacteria Cultures Per Sample',
       xaxis: "OTU ID",
       //margins: 
-      hovermode: otu_ids, 
+      //hovermode: otu_ids, 
       showlegend: false,
       height: 600,
       width: 600
