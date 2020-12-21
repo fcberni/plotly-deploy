@@ -80,15 +80,15 @@ function buildCharts(sample) {
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
-    var yticks = otu_ids.slice(0, 10).map(otuID => 'OTU ${otuID}').reverse();
+    var yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
 
     // 8. Create the trace for the bar chart. 
     var barData = [
       {
+        type: "bar",
         y: yticks,
         x: sample_values.slice(0, 10).reverse(),
         text: otu_labels.slice(0, 10).reverse(),
-        type: "bar",
         orientation: "h",
       }
       
@@ -105,77 +105,77 @@ function buildCharts(sample) {
   });
 }
 
-// Deliverable Bubble charts
+// // Deliverable Bubble charts
 
-    // 1. Create the trace for the bubble chart.
-    var bubbleData = [
+//     // 1. Create the trace for the bubble chart.
+//     var bubbleData = [
    
-    ];
+//     ];
 
-    // 2. Create the layout for the bubble chart.
-    var bubbleLayout = {
+//     // 2. Create the layout for the bubble chart.
+//     var bubbleLayout = {
       
-    };
+//     };
 
-    // 3. Use Plotly to plot the data with the layout.
+//     // 3. Use Plotly to plot the data with the layout.
     
-  });
-}
+//   });
+// }
 
-//Deliverable 3 Gauge 
+// //Deliverable 3 Gauge 
 
- // 1. Create a variable that filters the metadata array for the object with the desired sample number.
+//  // 1. Create a variable that filters the metadata array for the object with the desired sample number.
 
-    // Create a variable that holds the first sample in the array.
+//     // Create a variable that holds the first sample in the array.
   
 
-    // 2. Create a variable that holds the first sample in the metadata array.
+//     // 2. Create a variable that holds the first sample in the metadata array.
     
 
-    // Create variables that hold the otu_ids, otu_labels, and sample_values.
+//     // Create variables that hold the otu_ids, otu_labels, and sample_values.
 
 
-    // 3. Create a variable that holds the washing frequency.
+//     // 3. Create a variable that holds the washing frequency.
    
 
-    // Create the yticks for the bar chart.
-    // Hint: Get the the top 10 otu_ids and map them in descending order 
-    // so the otu_ids with the most bacteria are last. 
-    var yticks = 
+//     // Create the yticks for the bar chart.
+//     // Hint: Get the the top 10 otu_ids and map them in descending order 
+//     // so the otu_ids with the most bacteria are last. 
+//     var yticks = 
 
-    // Create the trace for the bar chart. 
-    var barData = [
+//     // Create the trace for the bar chart. 
+//     var barData = [
       
-    ];
-    // Create the layout for the bar chart. 
-    var barLayout = {
+//     ];
+//     // Create the layout for the bar chart. 
+//     var barLayout = {
       
-    };
+//     };
 
-    // Use Plotly to plot the data with the layout. 
+//     // Use Plotly to plot the data with the layout. 
 
-    // Create the trace for the bubble chart.
-    var bubbleData = [
+//     // Create the trace for the bubble chart.
+//     var bubbleData = [
    
-    ];
+//     ];
 
-    // Create the layout for the bubble chart.
-    var bubbleLayout = {
+//     // Create the layout for the bubble chart.
+//     var bubbleLayout = {
       
-    };
+//     };
 
-    // D2: 3. Use Plotly to plot the data with the layout.
+//     // D2: 3. Use Plotly to plot the data with the layout.
    
     
-    // 4. Create the trace for the gauge chart.
-    var gaugeData = [
+//     // 4. Create the trace for the gauge chart.
+//     var gaugeData = [
      
-    ];
+//     ];
     
-    // 5. Create the layout for the gauge chart.
-    var gaugeLayout = { 
+//     // 5. Create the layout for the gauge chart.
+//     var gaugeLayout = { 
      
-    };
+//     };
 
-}
+// }
 
