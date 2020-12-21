@@ -108,19 +108,35 @@ function buildCharts(sample) {
 // // Deliverable Bubble charts
 
 //     // 1. Create the trace for the bubble chart.
-//     var bubbleData = [
-   
-//     ];
+    var bubbleData = [ 
+      {
+        x: otu_ids,
+        y: sample_values,
+        text: otu_labels, //['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+        mode: "markers",
+        marker: {
+          color: otu_ids, //['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+          size: otu_labels, //[40, 60, 80, 100]
+        },
+        type: 'scatter'
+      }
+    ];
 
 //     // 2. Create the layout for the bubble chart.
-//     var bubbleLayout = {
+    var bubbleLayout = {
+      title: 'Bacteria Cultures Per Sample',
+      xaxis: "OTU ID",
+      margins: 
+      hovermode: otu_ids, 
+      showlegend: false,
+      height: 600,
+      width: 600
       
-//     };
+    };
 
-//     // 3. Use Plotly to plot the data with the layout.
-    
-//   });
-// }
+// 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot('scatter', bubbledata, bubbleLayout);
+  
 
 // //Deliverable 3 Gauge 
 
