@@ -88,8 +88,8 @@ function buildCharts(sample) {
         y: yticks,
         x: sample_values.slice(0, 10).reverse(),
         text: otu_labels.slice(0, 10).reverse,
-        type: "bar"
-        orientation: "h"
+        type: "bar",
+        orientation: "h",
       }
       
     ];
