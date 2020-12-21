@@ -115,9 +115,8 @@ function buildCharts(sample) {
         mode: "markers",
         marker: {
           color: otu_ids, 
-          size: sample_values, 
+          size: sample_values 
         }
-        //type: 'scatter'
       }
     ];
 
@@ -131,15 +130,13 @@ function buildCharts(sample) {
       showlegend: false,
       autosize: false,
       height: 600,
-      width: 600
-      
+      width: 600 
     };
 
 // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot('bubble', bubbleData, bubbleLayout);
-  
-  });
-}
+    });
+  }
 
 // //Deliverable 3 Gauge 
 
