@@ -111,11 +111,11 @@ function buildCharts(sample) {
       {
         x: otu_ids,
         y: sample_values,
-        text: otu_labels, //['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+        text: otu_labels, 
         mode: "markers",
         marker: {
-          color: otu_ids, //['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-          size: sample_values, //[40, 60, 80, 100]
+          color: otu_ids, 
+          size: sample_values, 
         }
         //type: 'scatter'
       }
@@ -127,7 +127,6 @@ function buildCharts(sample) {
       xaxis: { 
         title: "OTU ID"
         },
-      //margins: 
       hovermode: "closest", 
       showlegend: false,
       autosize: false,
